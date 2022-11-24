@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Contato - Alura Barbershop</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="Logo da Alura Barbershop"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="nicknames">Nome e Sobrenome:</label>
+				<input type="text" id="nicknames" class="input-padrao" required placeholder="Fulaninho de Tal">
+
+				<label for="email">Email</label>
+				<input type="email" name="email" class="input-padrao" required placeholder="emailaqui@babaca.com">
+
+				<label for="Telefone">Telefone</label>
+				<input type="tel" id="Telefone" class="input-padrao" required placeholder="(_ _) _  _ _ _ _ - _ _ _ _">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" required></textarea>
+
+
+				<fieldset>
+					<legend>Gostaria de ser notificado via:</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email<label>
+					
+
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone </label>
+					
+
+					<label for="radio-wpp"><input type="radio" name="contato" value="whatsapp" id="radio-wpp" checked> WhatsApp</label>
+					
+				</fieldset>
+
+				<div>
+					<legend>Marque seu Horário:</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</div>
+
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber novidades via Email?</label>
+
+
+				<input type="submit"
+				 value="Enviar Formulário" class="enviar">
+			</form>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Segunda</td>
+						<td>8 ~ 20 hrs</td>
+
+					</tr>
+					<tr>
+						<td>Quarta</td>
+						<td>8 ~ 20 hrs</td>
+					</tr>
+					<tr>
+						<td>Sexta</td>
+						<td>8 ~ 20 hrs</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+
+
+		<footer>
+			<img src="logo-branco.png" alt="Logo da Alura Barbershop">
+			<p class="copyright">&copy; Copyright Alura Barbershop&trade; ISO 9001 - 2022</p>
+		</footer>
+
+	</body>
+</html>
